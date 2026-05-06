@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero-section">
+  <div class="container hero-inner">
+    <h1>Welcome to Crochet Creations</h1>
+    <p>Handcrafted crochet items made with love. From cozy blankets to stylish accessories, find your perfect piece or request a custom design.</p>
+    <div class="button-group">
+      <a href="{{ url_for('products_page') }}" class="button primary">Shop Now</a>
+      <a href="{{ url_for('contact') }}" class="button secondary">Custom Order</a>
+    </div>
+  </div>
+</section>
+
+<section class="feature-section">
+  <div class="container">
+    <h2>Featured Creations</h2>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon">🧶</div>
+        <h3>Cozy Blankets</h3>
+        <p>Warm and cuddly blankets perfect for any season.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧣</div>
+        <h3>Scarves & Hats</h3>
+        <p>Stylish accessories to keep you warm and fashionable.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛋️</div>
+        <h3>Home Decor</h3>
+        <p>Beautiful crochet pieces to decorate your home.</p>
+      </div>
+    </div>
+    <div class="centered-link">
+      <a href="{{ url_for('products_page') }}" class="text-link">View All Products →</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

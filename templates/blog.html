@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="section-light">
+  <div class="container">
+    <h1>Crochet Blog</h1>
+    <p class="section-intro">Tips, tutorials, and inspiration for all things crochet. Whether you're a beginner or experienced crafter, find helpful advice and creative ideas here.</p>
+    <div class="blog-list">
+      {% for post in posts %}
+      <article class="blog-card">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.excerpt }}</p>
+        <div class="blog-meta">
+          <span>{{ post.date }}</span>
+          <span>{{ post.read_time }}</span>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

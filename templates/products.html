@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="section-light">
+  <div class="container">
+    <h1>Our Products</h1>
+    <div class="grid-3">
+      {% for product in products %}
+      <div class="card product-card">
+        <div class="card-icon">{{ product.icon }}</div>
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <div class="product-footer">
+          <span class="price">{{ product.price }}</span>
+          <a href="{{ url_for('contact') }}" class="button small">Inquire</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="centered-link">
+      <p>Don't see what you're looking for? We offer custom orders!</p>
+      <a href="{{ url_for('contact') }}" class="button primary">Request Custom Order</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

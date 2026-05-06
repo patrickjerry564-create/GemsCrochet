@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="section-light">
+  <div class="container contact-grid">
+    <div>
+      <h1>Contact Us</h1>
+      <p>Have questions about our products? Want to place a custom order? We'd love to hear from you!</p>
+      <div class="info-block">
+        <h2>Email</h2>
+        <p>info@crochetcreations.com</p>
+      </div>
+      <div class="info-block">
+        <h2>Phone</h2>
+        <p>(555) 123-4567</p>
+      </div>
+      <div class="info-block">
+        <h2>Social Media</h2>
+        <p><a href="#">Facebook</a> • <a href="#">Instagram</a> • <a href="#">Etsy</a></p>
+      </div>
+    </div>
+    <div>
+      <form method="post" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit" class="button primary">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}

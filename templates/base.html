@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Crochet Creations</title>
+    <title>Heart of the Gem's Crochet</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
   </head>
   <body>
     <nav class="site-nav">
       <div class="container nav-inner">
-        <a class="brand" href="{{ url_for('home') }}">Crochet Creations</a>
+        <a class="brand" href="{{ url_for('home') }}">
+          <div class="logo-title">Heart of the Gem's Crochet</div>
+          <div class="logo-subtitle">the beauty of fiber arts</div>
+        </a>
         <div class="nav-links">
           <a href="{{ url_for('home') }}">Home</a>
           <a href="{{ url_for('about') }}">About</a>
@@ -35,7 +38,7 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© 2024 Crochet Creations. All rights reserved.</p>
+        <p>© 2024 Heart of the Gem's Crochet. All rights reserved.</p>
         <div class="footer-links">
           <a href="#">Facebook</a>
           <a href="#">Instagram</a>

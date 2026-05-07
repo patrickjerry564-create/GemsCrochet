@@ -169,14 +169,22 @@ a {
 }
 
 .card-icon {
-  width: 4rem;
-  height: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
   display: grid;
   place-items: center;
   margin-bottom: 1rem;
-  border-radius: 1rem;
-  background: #f3e8ff;
-  font-size: 2rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+  font-size: 2.5rem;
+  box-shadow: 0 4px 12px rgba(113, 69, 216, 0.15);
+  border: 2px solid rgba(124, 58, 237, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-icon:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(113, 69, 216, 0.25);
 }
 
 .card h3,

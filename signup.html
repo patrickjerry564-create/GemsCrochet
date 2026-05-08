@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About - Heart of the Gem</title>
+    <title>Sign Up - Heart of the Gem</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -28,12 +28,22 @@
     <main class="site-main">
       <section class="section-light">
         <div class="container">
-          <h1>About Heart of the Gem</h1>
-          <div class="content-card">
-            <p>Welcome to Heart of the Gem! I'm passionate about creating beautiful, handmade crochet items that bring joy and warmth to people's lives. With years of experience in the art of crochet, I specialize in crafting unique pieces that combine traditional techniques with modern designs.</p>
-            <p>Each item is made with high-quality yarns and attention to detail. Whether you're looking for a cozy blanket, stylish accessories, or custom home decor, I take pride in creating pieces that are both functional and beautiful.</p>
-            <p>I believe in sustainable crafting practices and use eco-friendly materials whenever possible. Custom orders are always welcome - let's create something special together!</p>
+          <h1>Join Heart of the Gem</h1>
+          <p class="section-intro">Sign up today for early access to new handmade drops, love gift alerts, community tutorials, and exclusive site features as they launch.</p>
+          <div class="signup-card">
+            <form action="mailto:info@heartofthegem.com?subject=Sign%20Up" method="get">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email" required />
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" placeholder="Where you're from" />
+              <label for="interests">What you love</label>
+              <textarea id="interests" name="interests" placeholder="Tell us what crochet styles or projects inspire you"></textarea>
+              <button type="submit">Join the list</button>
+            </form>
           </div>
+          <div class="section-intro" style="margin-top: 1.5rem;">As Heart of the Gem grows, you’ll be first to hear about free love gifts, new craft ideas, and the community stories that shape our art.</div>
         </div>
       </section>
     </main>

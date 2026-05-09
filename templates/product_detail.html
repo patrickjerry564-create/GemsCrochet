@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="section-light">
+  <div class="container">
+    <h1>{{ product.name }}</h1>
+    <p class="section-intro">{{ product.description }}</p>
+    {% if product.image %}
+    <img src="{{ product.image }}" alt="{{ product.name }}" class="product-image" />
+    {% endif %}
+    <div class="writeup-card">
+      <h2>Details</h2>
+      <p>{{ product.details }}</p>
+      <p><strong>Price: {{ product.price }}</strong></p>
+      <ul class="feature-list">
+        {% for feature in product.features %}
+        <li>{{ feature }}</li>
+        {% endfor %}
+      </ul>
+      <div class="centered-link" style="margin-top:1.5rem;">
+        <a href="{{ url_for('contact') }}" class="button primary">Request this item</a>
+        <a href="{{ url_for('products_page') }}" class="button secondary">Back to Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

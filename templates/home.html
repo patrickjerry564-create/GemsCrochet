@@ -15,21 +15,27 @@
   <div class="container">
     <h2>Featured Creations</h2>
     <div class="grid-3">
-      <div class="card">
-        <div class="card-icon">🧶</div>
-        <h3>Cozy Blankets</h3>
-        <p>Warm and cuddly blankets perfect for any season.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🧣</div>
-        <h3>Scarves & Hats</h3>
-        <p>Stylish accessories to keep you warm and fashionable.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🛋️</div>
-        <h3>Home Decor</h3>
-        <p>Beautiful crochet pieces to decorate your home.</p>
-      </div>
+      <a href="{{ url_for('products_page') }}#blankets" class="card-link">
+        <div class="card">
+          <div class="card-icon">🧶</div>
+          <h3>Cozy Blankets</h3>
+          <p>Warm and cuddly blankets perfect for any season.</p>
+        </div>
+      </a>
+      <a href="{{ url_for('products_page') }}#scarves-hats" class="card-link">
+        <div class="card">
+          <div class="card-icon">🧣</div>
+          <h3>Scarves & Hats</h3>
+          <p>Stylish accessories to keep you warm and fashionable.</p>
+        </div>
+      </a>
+      <a href="{{ url_for('products_page') }}#home-decor" class="card-link">
+        <div class="card">
+          <div class="card-icon">🛋️</div>
+          <h3>Home Decor</h3>
+          <p>Beautiful crochet pieces to decorate your home.</p>
+        </div>
+      </a>
     </div>
     <div class="centered-link">
       <a href="{{ url_for('products_page') }}" class="text-link">View All Products →</a>
